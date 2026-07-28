@@ -68,7 +68,7 @@ Nếu bạn đang tìm kiếm giải pháp [thi công nội thất nhựa](https
 ---
 ## Danh mục sản phẩm
 
-- 👉 [Tủ nhựa quần áo Ecoplast](products/tu-nhua-quan-ao-ecoplast.md)
+- 👉 [Tủ nhựa quần áo Ecoplast](/tu-nhua-quan-ao-ecoplast.md)
 - 👉 [Tủ bếp nhựa Ecoplast](products/tu-bep-ecoplast.md)
 - 👉 [Giường ngủ nhựa Ecoplast](products/giuong-ngu-ecoplast.md)
 - 👉 [Kệ tivi nhựa Ecoplast](products/ke-tivi-ecoplast.md)
