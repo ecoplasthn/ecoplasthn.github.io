@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title | default: "Ecoplast Hà Nội" }}</title>
+  <style>
+    /* Style cơ bản cho layout */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 10px 20px;
+    }
+    
+    /* Header & Navigation Menu */
+    header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+    .site-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1a365d;
+      text-decoration: none;
+    }
+    .main-nav {
+      margin-top: 15px;
+      background-color: #f7fafc;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px solid #edf2f7;
+    }
+    .nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+    }
+    .nav-list li a {
+      color: #2b6cb0;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.2s ease;
+    }
+    .nav-list li a:hover {
+      color: #1a202c;
+      text-decoration: underline;
+    }
+    .nav-external {
+      color: #d69e2e !important; /* Hiệu ứng màu riêng cho link website chính */
+    }
+
+    /* Content Area */
+    main img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8f0;
+      text-align: center;
+      font-size: 14px;
+      color: #718096;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & MENU NỘI BỘ -->
+  <header>
+    <a href="{{ '/' | relative_url }}" class="site-title">Ecoplast Hà Nội</a>
+    
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="{{ '/' | relative_url }}">🏠 Trang Chủ</a></li>
+        <li><a href="{{ '/tu-nhua-quan-ao-ecoplast.html' | relative_url }}">👔 Tủ Quần Áo</a></li>
+        <li><a href="{{ '/tu-bep-nhua-ecoplast.html' | relative_url }}">🍳 Tủ Bếp</a></li>
+        <li><a href="{{ '/giuong-ngu-nhua-ecoplast.html' | relative_url }}">🛏️ Giường Ngủ</a></li>
+        <li><a href="{{ '/ban-lam-viec-nhua-ecoplast.html' | relative_url }}">💼 Bàn Làm Việc</a></li>
+        <li><a href="{{ '/ban-hoc-nhua-ecoplast.html' | relative_url }}">📚 Bàn Học</a></li>
+        <li><a href="{{ '/ban-trang-diem-nhua-ecoplast.html' | relative_url }}">💄 Bàn Trang Điểm</a></li>
+        <li><a href="{{ '/ke-my-pham-nhua-ecoplast.html' | relative_url }}">🧴 Kệ Mỹ Phẩm</a></li>
+        <li><a href="{{ '/ke-sach-nhua-ecoplast.html' | relative_url }}">📖 Kệ Sách</a></li>
+        <li><a href="{{ '/ke-tivi-nhua-ecoplast.html' | relative_url }}">📺 Kệ Tivi</a></li>
+        <li><a href="{{ '/tu-lavabo-nhua-ecoplast.html' | relative_url }}">🚿 Tủ Lavabo</a></li>
+        <li><a href="{{ '/tu-nhua-gam-cau-thang-ecoplast.html' | relative_url }}">📐 Tủ Cầu Thang</a></li>
+        <li><a href="{{ '/tu-giay-dep-nhua-ecoplast.html' | relative_url }}">👟 Tủ Giày</a></li>
+        <li><a href="{{ '/combo-noi-that-phong-ngu-nhua-ecoplast.html' | relative_url }}">🛋️ Combo Phòng Ngủ</a></li>
+        <li><a href="https://ecoplasthanoi.io.vn/" target="_blank" class="nav-external">🌐 Website Chính</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- NỘI DUNG TRANG CON (NẮM TRONG CÁC FILE .MD) -->
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- FOOTER CHUNG -->
+  <footer>
+    <p>© 2026 <strong>Ecoplast Hà Nội</strong>. Thiết kế & Tư vấn bởi <a href="https://www.facebook.com/nguyenthanhktsqb" target="_blank">KTS Nguyễn Thanh</a>.</p>
+  </footer>
+
+</body>
+</html>
